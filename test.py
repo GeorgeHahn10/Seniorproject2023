@@ -1,14 +1,16 @@
-import matplotlib.pyplot as plt
-import numpy as np
+# from Stock import Stock
+#
+# jpm = Stock("RACE")
+#
+# jpm.populate()
+#
+# jpm.plot("06-07-2023")
 
-fig, ax = plt.subplots(figsize=(12, 6))
+from Dog import Dog
+from Animal import Animal
 
-x = np.arange(0, 10, 0.1)
-y = np.sin(x)
-z = np.cos(x)
+bo = Dog("Bo", 5, "Mut")
 
-ax.plot(y, color='blue', label='Sine wave')
-ax.plot(z, color='black', label='Cosine wave')
+chancer = Dog("Chance", 13, "Yellow Lab")
 
-plt.xlim([25, 50])
-plt.show()
+bo.speak()
