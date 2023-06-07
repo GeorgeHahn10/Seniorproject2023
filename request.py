@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 
-URL = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&interval=1min&outputsize=full&adjusted=false&apikey="
+URL = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&interval=1min&outputsize=full&adjusted=false&apikey=PJNT54CJJ4A2CTA8"
 
 def request(ticker):
     r = requests.get(URL + "&symbol=" + ticker).json()
@@ -12,4 +12,4 @@ def request(ticker):
 
 
 if __name__ == "__main__":
-    request("NOC")
+    request("BA")
